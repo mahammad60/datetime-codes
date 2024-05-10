@@ -1,0 +1,21 @@
+import datetime
+event = input("input name of event ")
+year = int(input("year: "))
+month = int(input("month: "))
+day = int(input("day: "))
+date_ = datetime.date(year, month, day)
+today = datetime.date.today()
+diff = today - date_
+
+if date_ > today:
+  print("coming soon!")
+
+elif date_ < today:
+  print(f"hope you had a good time! this was {diff} ago")
+
+
+else:
+
+
+   print(f"enjoy the event,{today} its today! 🎉🎉") 
+
