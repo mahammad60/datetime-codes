@@ -6,16 +6,20 @@ day = int(input("day: "))
 date_ = datetime.date(year, month, day)
 today = datetime.date.today()
 diff = today - date_
-
+diff = diff.days
 if date_ > today:
   print("coming soon!")
 
 elif date_ < today:
-  print(f"hope you had a good time! this was {diff} ago")
+  print(f"hope you had a good time! this was {diff} days ago")
 
 
 else:
 
 
    print(f"enjoy the event,{today} its today! 🎉🎉") 
+
+
+
+
 
